@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <!-- Metadata goes here -->
+		<meta charset="UTF-8"/> <!-- allows special character -->
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+		<title> Orizon Travel </title>
+		<link rel="icon" type="image/x-icon" href="img/Logo.svg"> <!-- link to favicon -->
+		<link rel="stylesheet" href="style.css"> <!-- link to css file -->
+        <!-- link to google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+   
+    <!-- header section starts -->
+    <header>
+        <a href="index.html">
+            <img src="img/logo_naming.svg" alt="Orizon Homepage">
+            <svg width="46" height="68" viewBox="0 0 46 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44.9537 13.102C41.0473 5.28393 33.422 0 23.9022 0C9.90401 0 0 11.4274 0 25.5247C0 39.6221 18.2918 68 24.0019 68C27.53 68 35.78 57.1722 41.5722 45.5706C41.5722 45.5706 44.1061 39.696 44.3906 37.6196C44.5578 36.8251 44.5989 36.004 44.5021 35.1918C44.4493 34.4593 44.2616 33.9601 44.0006 33.2631C41.3581 26.9336 31.4658 31.1336 29.7443 31.5382C26.8115 32.2264 24.521 30.9209 22.905 29.326C21.4944 27.9319 20.5999 26.3163 20.2479 25.6133C20.1864 25.4922 20.3125 25.3652 20.4356 25.4184C21.7143 25.9973 22.8317 26.4049 23.8318 26.6707C30.0141 28.3188 31.7474 24.6209 39.2025 23.0999C41.1411 22.7041 42.7893 22.0366 43.9742 21.0796C44.8599 20.3649 45.4523 19.4758 45.7808 18.4391C46.5756 15.9256 44.9537 13.102 44.9537 13.102ZM22.0164 21.4754C22.0017 21.4843 21.9842 21.4902 21.9695 21.499L19.3124 22.71C18.1891 23.221 17.2624 24.0834 16.6699 25.1703L15.2651 27.7429C14.6317 28.9036 12.9306 28.7678 12.4907 27.5154L8.0417 14.9067C7.77774 14.1565 8.20593 13.4358 8.84235 13.2024C9.14149 13.0932 9.48756 13.0902 9.83069 13.2438L10.2706 13.4417L21.4768 18.4775L21.9636 18.6961C23.1455 19.2277 23.169 20.9054 22.0164 21.4754Z" fill="white"/>
+            </svg>
+                
+        </a>
+        <nav id="main-nav">
+            <div class="navbar">
+                <ul>
+                    <li><a href='#'>Pacchetti</a></li>
+                    <li><a href='#'>Eventi</a></li>
+                    <li><a href='#'>Blog</a></li>
+                </ul>
+            </div>
+            <button id="login-btn"> <i class="fa-solid fa-user"></i><span>Log in</span></button>
+            <button id="menu-bar">
+                <i class="fa-solid fa-bars" id="menu-open-icon"></i>
+                <i class="fa-solid fa-xmark" id="menu-close-icon"></i>
+            </button>
+        </nav>
+    </header> 
+    <!-- Header section ends-->
+
+    <!-- login form section starts-->
+    <div class="login-form-container">
+        
+        <form action="#">
+            <i class="fa-solid fa-xmark" id="form-close"></i>
+            <span class="title">Accedi</span>
+            <div class="input-box">
+                <p>Email</p>
+                <input type="email" placeholder="enter you mail">
+            </div>
+            <div class="input-box">
+                <p>Password</p>
+                <input type="password" id="login-pw" placeholder="enter your password">
+                <i class="fa-solid fa-eye" id="pw-visibility"></i>
+            </div>
+            <div class="submit_btn">
+                <input type="submit" value="login now" class="button">
+            </div>
+            <div class="remember">
+                <input type="checkbox" name="remember" id="remember">
+                <label for="remember">ricordami</label>
+            </div>            
+            <div class="other_option">
+                <p>Password dimenticata? <a href="#">clicca qui</a></p>
+                <p>Non hai un account? <a href="#">registrati ora</a></p>     
+            </div>
+        </form>
+    </div>
+    <!-- login form section ends-->
+
+
+
+    <!-- page section start-->
+    <section class="main" id="main">
+
+       <div class="main-box">
+            <div class="other-box">
+                <img src="img/world_map_svg.svg" alt="world map">
+                <h2>Viaggia... esplora... vivi come un local</h2>   
+                <h3>Scegli di viaggiare consapevole, in armonia con la natura e la popolazione</h3>
+            </div>  
+       </div>
+
+
+       
+       <div class="searchbar">
+            <form action="#">
+                    <input type="text" placeholder="Destinazione">
+                    <input type="date" placeholder="Andata">
+                    <input type="date" placeholder="Ritorno">
+                    <div class="submit">
+                        <input type="submit" value="">
+                    </div>
+            </form>
+         </div>
+    </section>
+    
+
+
+
+    <!-- sezione pacchetti -->
+    <section class="pack-section">
+        <div class="title">
+            <h2>Prova i nostri pacchetti in evidenza</h2>
+            <h3>Scegli tra viaggi di gruppo o di nozze</h3>
+        </div>
+        <div class="pack-card-container">
+            <div class="pack-card">
+                <h2>Sudafrica</h2>
+                <div class="card-img" style="background-image: url(img/sudafrica_card.jpg);">
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa, 
+                        temporibus veniam necessitatibus placeat, reperhenderit cu, earum modi
+                    </p>
+                    <img src="img/travel_group.svg" alt="Viaggio di Gruppo">
+                </div>
+                <p class="price">a partire da <strong>€1.569</strong></p>
+            </div>
+
+            <div class="pack-card">
+                <h2>Centro america</h2>
+                <div class="card-img" style="background-image: url(img/centramerica_card.png);">
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa, 
+                        temporibus veniam necessitatibus placeat, reperhenderit cu, earum modi
+                    </p>
+                    <img src="img/travel_group.svg" alt="Viaggio di Gruppo">
+                </div>
+                <p class="price">a partire da <strong>€1.569</strong></p>
+            </div>
+
+            <div class="pack-card">
+                <h2>Islanda</h2>
+                <div class="card-img" style="background-image: url(img/islanda_card.png);">
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa, 
+                        temporibus veniam necessitatibus placeat, reperhenderit cu, earum modi
+                    </p>
+                    <img src="img/honeymoon.svg" alt="Luna di miele">
+                </div>
+                <p class="price">a partire da <strong>€1.569</strong></p>
+            </div>
+
+            <div class="pack-card">
+                <h2>Perù</h2>
+                <div class="card-img" style="background-image: url(img/peru_card.png);">
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa, 
+                        temporibus veniam necessitatibus placeat, reperhenderit cu, earum modi
+                    </p>
+                    <img src="img/travel_group.svg" alt="Viaggio di Gruppo">
+                </div>
+                <p class="price">a partire da <strong>€1.569</strong></p>
+            </div>
+
+            <div class="pack-card">
+                <h2>giappone</h2>
+                <div class="card-img" style="background-image: url(img/giappone_card.png);">
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa, 
+                        temporibus veniam necessitatibus placeat, reperhenderit cu, earum modi
+                    </p>
+                    <img src="img/travel_group.svg" alt="Viaggio di Gruppo">
+                </div>
+                <p class="price">a partire da <strong>€1.569</strong></p>
+            </div>
+
+            <div class="pack-card">
+                <h2>Galapagos</h2>
+                <div class="card-img" style="background-image: url(img/galapagos_card.png);">
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa, 
+                        temporibus veniam necessitatibus placeat, reperhenderit cu, earum modi
+                    </p>
+                    <img src="img/honeymoon.svg" alt="Luna di miele">
+                </div>
+                <p class="price">a partire da <strong>€1.569</strong></p>
+            </div>
+        </div>
+        <a href="#" class="altro">Scopri di più</a>
+    </section>
+    <!-- pack section end -->
+
+
+
+
+    <!-- testimonial section start -->
+    <section class="testimonial-section">
+        <h2>Leggi le testimonianze di chi ha viaggiato con noi</h2>
+        <div class="t-card-container">
+            <div class="test-card">
+                <h3>Lorem Ispum</h3>
+                <p>Dolor sit, amet consectetur adipisicing elit. Expedita ullam ipsum ut distinctio provident ipsam, totam voluptatibus suscipit consequuntur asperiores sit accusamus dolores nobis fuga odit </p>
+            </div>
+            <div class="test-card">
+                <h3>Lorem Ispum</h3>
+                <p>Dolor sit, amet consectetur adipisicing elit. Expedita ullam ipsum ut distinctio provident ipsam, totam voluptatibus suscipit consequuntur asperiores sit accusamus dolores nobis fuga odit </p>
+            </div>
+            <div class="test-card">
+                <h3>Lorem Ispum</h3>
+                <p>Dolor sit, amet consectetur adipisicing elit. Expedita ullam ipsum ut distinctio provident ipsam, totam voluptatibus suscipit consequuntur asperiores sit accusamus dolores nobis fuga odit </p>
+            </div>
+        </div>
+    </section>    
+    <!-- testimonial section end -->
+
+
+
+
+    <!-- newsletter section start -->
+    <section class="newsletter-container">
+        <div class="text">
+            <h2>Newsletter</h2>
+            <p>Non perderti gli eventi che organizziamo, gli ultimi articoli del Blog e codici sconto riservati.
+               <br>Iscriviti alla nostra newsletter! 
+            </p>
+        </div>
+            <form action="#" class="newsletter-cta">
+                <input type="email" placeholder="Esempio@email.com">
+                <input type="submit" value="Iscrivimi">
+            </form>
+    </section>
+    <!-- newsletter section end -->
+
+
+
+
+    <!-- utilities section start -->
+    <section class="utility-container">
+        <div class="utility-main">
+            <img src="img/logo_payoff.svg" alt="Orizon">
+            <div>
+                <nav>
+                    <h3>Società</h3>
+                    <ul>                    
+                        <li><a href='#'>Chi siamo</a></li>
+                        <li><a href='#'>Come lavoriamo</a></li>
+                        <li><a href='#'>Lavora con noi</a></li>
+                        <li><a href='#'>Partnership</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3>Supporto</h3>
+                    <ul>
+                        <li><a href='#'>Assistenza</a></li>
+                        <li><a href='#'>Termini e condizioni</a></li>
+                        <li><a href='#'>Informativa privacy</a></li>
+                        <li><a href='#'>Informazioni legali</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="img">
+            <img class="img-aircraft" src="img/aircraft_animation.svg" alt="aircraft">
+        </div>
+    </section>
+    <!-- utilities section end -->
+    
+    <!-- right section start  -->
+    <section class="right-container">
+        <div class="contact">
+            <div class="social">
+                <a><i class="fa-brands fa-facebook-f"></i></a>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div>
+                <p>Tel. 090 1234567</p>
+                <p>info@orizontravel.it</p>
+            </div>
+            <div>
+                <p>by OrizonTravel s.r.l.</p>
+                <p>Partita IVA 12345678901</p>
+            </div>
+            <div>
+                <p>Via Lorem Ipsum 123</p>
+                <p>09121 - Cagliari</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Copirights 2022, OrizonTravel s.r.l. - tutti i diritti riservati</p>
+        </div>
+    </section>
+    <!-- right section end -->
+
+
+    <!-- page section end-->
+
+
+
+
+    <!-- link to js file-->
+    <script src="script.js"></script>
+  </body>
+</html>
