@@ -327,7 +327,7 @@ button i {
     top: 70%;
 }
 
-.main h3{
+h1{
     font-size: 48px;
     font-weight: 400;
     color: white;
@@ -488,7 +488,7 @@ button i {
     font-weight: 400;
     font-size: 40px;
 }
-.pack-section .title h3 {
+.pack-section .title p {
     font-weight: 300;
     font-size: 26px;
 }
@@ -516,7 +516,7 @@ button i {
     position: relative;
     overflow: hidden;
 }
-.pack-card h2 {
+.pack-card h3 {
     text-transform: uppercase;
     color: var(--blue);
     font-weight: 700;
@@ -570,18 +570,18 @@ button i {
     background-size: 135%;
 }
 
-.pack-section .altro {
+.pack-section .other {
     text-decoration: none;
     padding: 10px 50px;
     font-size: 30px;
     color: var(--blue);
 }
 
-.pack-section .altro:hover {
+.pack-section .other:hover {
     text-decoration: underline;
 }
 
-.pack-section .altro::after {
+.pack-section .other::after {
     content: '\f061';
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
@@ -595,7 +595,7 @@ button i {
     margin-left: 20px;
     padding: 10px;
 }
-.pack-section .altro:hover:after {
+.pack-section .other:hover:after {
     border: 3px solid var(--lightblue);
 }
 /* packet section end */
@@ -807,7 +807,7 @@ button i {
         text-align: center;
     }
 }
-.utility-main h3 {
+.utility-main h2 {
     color: white;
     font-size: 40px;
     font-weight: 400;
